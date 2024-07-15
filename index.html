@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="backup.js" defer></script>
+</head>
+<body>
+    <div class="container mt-2">
+        <h1 class="mt-5">Currency Converter</h1>
+        <div class="converter p-4 mt-2 bg-light rounded">
+            <div class="form-group">
+                <label for="base-money">Base Currency:</label>
+                <select class="form-control" id="base-money">
+                    <option value="">Choose A Currency</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" class="form-control" id="amount" value="1" min="0">
+            </div>
+            <div class="form-group">
+                <label for="target-currency">Target Currency:</label>
+                <select class="form-control" id="target-currency">
+                    <option value="">Choose A Currency</option>
+                </select>
+            </div>
+            <p>Converted Amount: <span id="converted-amount"></span></p>
+            <hr>
+            <div class="form-group">
+                <label for="date">Pick A Date</label>
+                <input type="date" class="form-control" id="date"/>
+            </div>
+            <button id="historical-rates" class="btn btn-primary">View Historical Rates</button>
+            <div id="historical-rates-container"></div>
+            <button id="save-favorite" class="btn btn-success mt-3">Save Favorite</button>
+            <div id="favorite-currency-pairs" class="mt-4 row col-md"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

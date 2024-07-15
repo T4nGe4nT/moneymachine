@@ -1,0 +1,67 @@
+body {
+    background-image: url(bg3.jpg);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px; /* Adjusted padding for better spacing */
+    box-shadow: 0px 0px 10px 0px black;
+    max-width: 400px;
+    width: 100%; /* Ensures container doesn't exceed max-width */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.converter {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.converter label, .converter select, .converter input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.converter button {
+    display: block; /* Keeps them as block-level elements */
+    margin: 0 auto; /* Centers them horizontally */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #656667;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.converter button:hover {
+    background-color: #1c1d1d;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#historical-rates-container {
+    margin-top: 20px;
+}
+
+#favorite-currency-pairs {
+    margin-top: 20px;
+}
+
